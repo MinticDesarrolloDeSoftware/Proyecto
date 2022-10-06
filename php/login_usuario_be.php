@@ -5,12 +5,12 @@ include 'conexion_be.php';
 $usuario = $_POST['usuario'];
 $contrasena = $_POST['contrasena'];
 
-$validar_login = mysqli_query($conexion, "SELECT * FROM usuarios WHERE correo= '$correo' 
+$validar_login = mysqli_query($conexion, "SELECT * FROM usuarios WHERE usuario= '$usuario' 
 and contrasena='$contrasena'");
 
-if(mysqli_num_rows($validad_login) > 0){
+if(mysqli_num_rows($validar_login) > 0){
 
-    header("location: perfil.php");
+    header("location: ../perfil.php");
     exit;
 
 }else{

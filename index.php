@@ -12,17 +12,6 @@
 </head>
 
 <body>
-    <SCRIPT  language=JavaScript> 
-        function go(){
-        
-        if (document.form.password.value=='CONTRASEÑA' && document.form.login.value=='USUARIO'){ 
-                document.form.submit(); 
-            } 
-            else{ 
-                 alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
-            } 
-        } 
-        </SCRIPT> 
         <div class="container">
             <div class="row justify-content-center pt-5 mt-5 m-1">
                 <div class="col-md-6 col-sm-8 col-xl-4 col-lg-5 formulario">
@@ -32,14 +21,15 @@
                 <h1 class="text-light">INICIAR SESIÓN</h1>
             </div>
             <div class="form-group mx-sm-4 pt-3">
-                <input type="text" class="form-control" name= login placeholder="Ingrese su Usuario">
+                <input type="text" class="form-control" name= usuario placeholder="Ingrese su Usuario">
             </div>
             <div class="form-group mx-sm-4 pb-3">
-                <input type="password" class="form-control" name= password placeholder="Ingrese su Contraseña">
+                <input type="password" class="form-control" name= contrasena placeholder="Ingrese su Contraseña">
             </div>
             <div class="form-group mx-sm-4 pb-2">
-                <input onclick=go() type=button class="btn btn-block ingresar"value="INGRESAR">
+                <button><a>Registrarse</a></button>
             </div>
+            </FORM>
             <div class="form-group mx-sm-4 text-right">
                 <span class=""><a href="olvidar.html" class="olvide">Olvide mi contraseña?</a></span>
             </div>
@@ -51,7 +41,7 @@
             <div class="form-group mx-sm-4 text-right">
                 <span class=""><a href="informacion.html" class="olvide">Acerca de la app</a></span>
             </div>
-            </FORM>
+            
         
 
         
