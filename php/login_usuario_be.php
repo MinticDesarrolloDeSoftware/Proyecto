@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 include 'conexion_be.php';
 
 $usuario = $_POST['usuario'];
@@ -9,7 +11,7 @@ $validar_login = mysqli_query($conexion, "SELECT * FROM usuarios WHERE usuario= 
 and contrasena='$contrasena'");
 
 if(mysqli_num_rows($validar_login) > 0){
-
+    $_SESSION['correo'] = $usuario;
     header("location: ../perfil.php");
     exit;
 

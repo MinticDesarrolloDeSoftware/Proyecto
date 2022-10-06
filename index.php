@@ -1,3 +1,14 @@
+<?php
+    session_start();
+
+    if(isset($_SESSION['correo'])){
+        header("location: perfil.php");
+    }
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 

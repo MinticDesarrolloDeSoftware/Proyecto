@@ -1,3 +1,22 @@
+<?php
+  session_start();
+  if(!isset($_SESSION['correo'])){
+    echo '
+        <script>
+            alert("Por favor debes iniciar sesion");
+            window.location = "index.php";
+        </script>
+    
+    ';
+    session_destroy();
+    die();
+    
+  }
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -40,7 +59,7 @@
         </ul>
       </div>
       <div class="d-grid gap-2 d-md-block">
-        <br><a type="button" class="btn btn-outline-dark" class="btn btn-primary" href="#" role="button">Editar Perfil</a>
+        <br><a type="button" class="btn btn-outline-dark" class="btn btn-primary" href="php/cerrar_sesion.php" role="button">Cerrar Sesion</a>
         <a type="button" class="btn btn-outline-danger" class="btn btn-primary" href="#" role="button">Buscar pareja</a>
       </div>
     </div>
