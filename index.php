@@ -26,7 +26,7 @@
         <div class="container">
             <div class="row justify-content-center pt-5 mt-5 m-1">
                 <div class="col-md-6 col-sm-8 col-xl-4 col-lg-5 formulario">
-        <FORM name=form action="perfil.html">
+        <FORM name=form action="php/login_usuario_be.php" method="post">
             <div class="form-group text-center pt-3">
                 <h1 class="text-light"> PARELLA</h1>
                 <h1 class="text-light">INICIAR SESIÓN</h1>
