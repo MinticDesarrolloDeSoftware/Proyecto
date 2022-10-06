@@ -41,7 +41,7 @@
       </div>
       <div class="d-grid gap-2 d-md-block">
         <br><a type="button" class="btn btn-outline-dark" class="btn btn-primary" href="#" role="button">Editar Perfil</a>
-        <a type="button" class="btn btn-outline-danger" class="btn btn-primary" href="#" role="button">Remover Perfil</a>
+        <a type="button" class="btn btn-outline-danger" class="btn btn-primary" href="#" role="button">Buscar pareja</a>
       </div>
     </div>
   </section>

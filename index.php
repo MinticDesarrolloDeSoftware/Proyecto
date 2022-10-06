@@ -26,8 +26,8 @@
             <div class="form-group mx-sm-4 pb-3">
                 <input type="password" class="form-control" name= contrasena placeholder="Ingrese su Contraseña">
             </div>
-            <div class="form-group mx-sm-4 pb-2">
-                <button><a>Registrarse</a></button>
+            <div class="form-group text-center pt-3">
+                <button class="btn btn-block ingresar"><a>Ingresar</a></button>
             </div>
             </FORM>
             <div class="form-group mx-sm-4 text-right">
