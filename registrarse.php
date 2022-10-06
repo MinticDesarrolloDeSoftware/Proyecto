@@ -17,75 +17,69 @@
     <div class="form-group text-center pt-3">
     <h1 class="text-light">REGISTRARSE</h1>
     </div>
-    <form action="#" method="post">
+    <form action="php/registro_usuario_be.php" method="post">
         <div class="fila-arriba">
             <div class="contenedor-input">
                 <label>
                     <FONT COLOR="white">Nombre</FONT> <span class="req">*</span>
                 </label>
-                <input type="text" required >
+                <input type="text" required name="nombre">
             </div>
 
             <div class="contenedor-input">
                 <label>
-                    <FONT COLOR="white">Apellido</FONT><span class="req">*</span>
+                    <FONT COLOR="white">Apellidos</FONT><span class="req">*</span>
                 </label>
-                <input type="text" required>
+                <input type="text" required name="apellido">
             </div>
         </div>
         <div class="contenedor-input">
             <label>
                 <FONT COLOR="white">Edad</FONT><span class="req">*</span>
             </label>
-            <input type="integer" required>
+            <input type="integer" required name="edad">
         </div>
         <div class="contenedor-input">
             <label>
                 <FONT COLOR="white">Direccion</FONT> <span class="req">*</span>
             </label>
-            <input type="text" required>
+            <input type="text" required name="direccion">
         </div>
         <div class="contenedor-input">
             <label>
                 <FONT COLOR="white">Genero</FONT><span class="req">*</span>
             </label>
-            <input type="text" required>
+            <input type="text" required name="genero">
         </div>
         <div class="contenedor-input">
             <label>
                 <FONT COLOR="white">Usuario</FONT><span class="req">*</span>
             </label>
-            <input type="text" required>
+            <input type="text" required name="usuario">
         </div>
         <div class="contenedor-input">
                 <label>
                     <FONT COLOR="white">Email</FONT><span class="req">*</span>
                 </label>
-            <input type="email" required>
+            <input type="email" required name="correo">
         </div>
         <div class="contenedor-input">
             <label>
                 <FONT COLOR="white">Contraseña</FONT><span class="req">*</span>
             </label>
-            <input type="password" required>
+            <input type="password" required name="contrasena">
         </div>
 
-        <div class="contenedor-input">
-            <label>
-                <FONT COLOR="white">Repetir Contraseña</FONT><span class="req">*</span>
-            </label>
-            <input type="password" required>
-        </div>
         <div class="contenedor-input">
             <label>
                 <FONT COLOR="white">Signo zodiacal</FONT><span class="req">*</span>
             </label>
-            <input type="text" required>
+            <input type="text" required name="signo">
         </div>
     </div>
 
     <div class="form-group text-center">
-        <span><a href="usuarionuevo.html" class="olvide1">Registrarse</a></span>
+        <button><a>Registrarse</a></button>
     </div>
     </form>
 
