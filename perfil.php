@@ -15,6 +15,9 @@
 
 
 
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -31,7 +34,7 @@
 </head>
 
 <body>   
-        <!-- PERFIL DO USUÁRIO -->
+        <!-- PERFIL DE USUARIO -->
   <section class="user-profile">
     <div class="header">
       <div class="cover">
@@ -42,20 +45,20 @@
     </div>
     </div>
     <div class="user-profile-body">
-      {% if current_user.id %}
+      {% if $sql.id %}
 
       <div class="user-profile-bio">
-        <h3 class="titulo">{{current_user.nombre}}</h3>
+        <h3 class="titulo">{{$sql.nombre}}</h3>
       </div>
       <div class="user-profile-footer">
         <ul class="data-list">
-          <li> Email: {{current_user.email}}</li>
-          <li>Telefono: {{current_user.telefono}}</li>
-          <li>Edad: {{current_user.edad}}</li>
-          <li> Direccion: {{current_user.direccion}}</li>
-          <li>Genero: {{current_user.genero}}</li>
-          <li>Usuario: {{current_user.usuario}}</li>
-          <li> Signo zodiacal: {{current_user.signo}}</li>
+          <li> Email: {{$sql.email}}</li>
+          <li>Telefono: {{$sql.telefono}}</li>
+          <li>Edad: {{$sql.edad}}</li>
+          <li> Direccion: {{$sql.direccion}}</li>
+          <li>Genero: {{$sql.genero}}</li>
+          <li>Usuario: {{$sql.usuario}}</li>
+          <li> Signo zodiacal: {{$sql.signo}}</li>
         </ul>
       </div>
       <div class="d-grid gap-2 d-md-block">

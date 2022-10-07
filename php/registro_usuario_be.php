@@ -17,6 +17,7 @@
     VALUES('$nombre', '$apellido', '$edad', '$direccion', '$genero', '$signo', '$usuario', '$contrasena', '$correo')";
 
     $ejecutar = mysqli_query($conexion, $query);
+    
 
     if($ejecutar){
 
