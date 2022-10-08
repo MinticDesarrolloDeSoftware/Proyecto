@@ -2,9 +2,11 @@
 
 include 'php/conexion_be.php';
 session_start();
-
+$row1 =array("");
+$row_ =array("");
 
 $usuario = $_SESSION['correo'];
+
 
 if(!isset($_SESSION['correo'])){
     echo '
@@ -33,49 +35,52 @@ if(!isset($_SESSION['correo'])){
    write_to_console($row[0]);
    write_to_console($row1[0]);
    
-   if($row1= "Geminis"){
+   if($row1[0]== 'Geminis'){
     $posible_pareja = mysqli_query($conexion, "SELECT * FROM usuarios WHERE signo= 'Virgo'");
     $row_ = mysqli_fetch_array($posible_pareja);
     write_to_console($row_);
-  }else if($row1= "Aries"){
+  }else if($row1[0]== 'Aries'){
     $posible_pareja = mysqli_query($conexion, "SELECT * FROM usuarios WHERE signo= 'Sagitario'");
     $row_ = mysqli_fetch_array($posible_pareja);
     write_to_console($row_);
-  }else if($row1= "Tauro"){
+  }else if($row1[0]== 'Tauro'){
     $posible_pareja = mysqli_query($conexion, "SELECT * FROM usuarios WHERE signo= 'Cancer");
     $row_ = mysqli_fetch_array($posible_pareja);
     write_to_console($row_);
-  }else if($row1= "Cancer"){
+  }else if($row1[0]== 'Cancer'){
     $posible_pareja = mysqli_query($conexion, "SELECT * FROM usuarios WHERE signo= 'Escorpio'");
     $row_ = mysqli_fetch_array($posible_pareja);
     write_to_console($row_);
-  }else if($row1= "Leo"){
+  }else if($row1[0]== 'Leo'){
     $posible_pareja = mysqli_query($conexion, "SELECT * FROM usuarios WHERE signo= 'Libra'");
     $row_ = mysqli_fetch_array($posible_pareja);
     write_to_console($row_);
-  }else if($row1= "Virgo"){
+  }else if($row1[0]== 'Virgo'){
     $posible_pareja = mysqli_query($conexion, "SELECT * FROM usuarios WHERE signo= 'Capricornio'");
     $row_ = mysqli_fetch_array($posible_pareja);
     write_to_console($row_);
-  }else if($row1= "Libra"){
+  }else if($row1[0]== 'Libra'){
     $posible_pareja = mysqli_query($conexion, "SELECT * FROM usuarios WHERE signo= 'Piscis'");
     $row_ = mysqli_fetch_array($posible_pareja);
     write_to_console($row_);
-  }else if($row1= "Escorpio"){
+  }else if($row1[0]== "Escorpio"){
     $posible_pareja = mysqli_query($conexion, "SELECT * FROM usuarios WHERE signo= 'Cancer'");
     $row_ = mysqli_fetch_array($posible_pareja);
     write_to_console($row_);
-  }else if($row1= "Capricornio"){
+  }else if($row1[0]== "Capricornio"){
     $posible_pareja = mysqli_query($conexion, "SELECT * FROM usuarios WHERE signo= 'Virgo'");
     $row_ = mysqli_fetch_array($posible_pareja);
     write_to_console($row_);
-  }else if($row1= "Acuario"){
+  }else if($row1[0]== "Acuario"){
     $posible_pareja = mysqli_query($conexion, "SELECT * FROM usuarios WHERE signo= 'Acuario'");
     $row_ = mysqli_fetch_array($posible_pareja);
     write_to_console($row_);
-  }else if($row1= "Piscis"){
+  }else if($row1[0]== "Piscis"){
     $posible_pareja = mysqli_query($conexion, "SELECT * FROM usuarios WHERE signo= 'Libra'");
     $row_ = mysqli_fetch_array($posible_pareja);
+    write_to_console($row_);
+  }else{
+    $row_ = "N/A No es un signo";
     write_to_console($row_);
   }
 
@@ -92,7 +97,7 @@ if(!isset($_SESSION['correo'])){
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos1.css">
-    <title>Perfil</title>
+    <title>Parejas</title>
 </head>
 
 <body>   
@@ -101,7 +106,7 @@ if(!isset($_SESSION['correo'])){
     <div class="header">
       <div class="cover">
         <div class="perfil-usuario-avatar">
-          <img src="http://www.coopernortetelecom.com.br/assets/images/author-1.png" alt="img-avatar">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/640px-Heart_coraz%C3%B3n.svg.png" alt="img-corazon">
         </div>
       </div>
     </div>
