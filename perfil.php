@@ -12,7 +12,6 @@
     ';
     session_destroy();
     die();
-    
   }
   $id_login = mysqli_query($conexion, "SELECT id FROM usuarios WHERE usuario= '$usuario'");
   $nombre_login = mysqli_query($conexion, "SELECT nombre FROM usuarios WHERE usuario= '$usuario'");
@@ -43,9 +42,6 @@
    }
    write_to_console($row[0]);
 
-?>
-
-
 
 ?>
 
@@ -63,7 +59,7 @@
 </head>
 
 <body>   
-        <!-- PERFIL DE USUARIO -->
+<div id="contenido"><!-- PERFIL DE USUARIO -->
   <section class="user-profile">
     <div class="header">
       <div class="cover">
@@ -72,17 +68,17 @@
         </div>
       </div>
     </div>
-    </div>
     <div class="user-profile-body">
     <?php echo "$row0[0] "?>
 
       <div class="user-profile-bio">
         <h3 class="titulo"><?php echo "$row[0] "?></h3>
       </div>
+      
       <div class="user-profile-footer">
         <ul class="data-list">
-          <li> Apellido: <?php echo "$row7[0] "?></li>
-          <li>Email: <?php echo "$row1[0] "?></li>
+          <li> Apellido: <?php echo "$row1[0] "?></li>
+          <li>Email: <?php echo "$row7[0] "?></li>
           <li>Usuario: <?php echo "$row2[0] "?></li>
           <li>Edad: <?php echo "$row3[0] "?></li>
           <li> Direccion: <?php echo "$row4[0] "?></li>
@@ -90,9 +86,12 @@
           <li> Signo <?php echo "$row6[0] "?></li>
         </ul>
       </div>
+      </div>
+      
       <div class="d-grid gap-2 d-md-block">
         <br><a type="button" class="btn btn-outline-dark" class="btn btn-primary" href="php/cerrar_sesion.php" role="button">Cerrar Sesion</a>
-        <a type="button" class="btn btn-outline-danger" class="btn btn-primary" href="#" role="button">Buscar pareja</a>
+        <a type="button" class="btn btn-outline-danger" class="btn btn-primary" href="buscar_pareja.php"  role="button">Buscar pareja</a>
+
       </div>
     </div>
   </section>
