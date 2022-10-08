@@ -19,58 +19,58 @@
     </div>
     <form action="php/registro_usuario_be.php" method="post">
         <div class="fila-arriba">
-            <div class="contenedor-input">
+            <div class="form-group mx-sm-4 pt-3">
                 <label>
                     <FONT COLOR="white">Nombre</FONT> <span class="req">*</span>
                 </label>
                 <input type="text" required name="nombre">
             </div>
 
-            <div class="contenedor-input">
+            <div class="form-group mx-sm-4 pt-3">
                 <label>
                     <FONT COLOR="white">Apellidos</FONT><span class="req">*</span>
                 </label>
                 <input type="text" required name="apellido">
             </div>
         </div>
-        <div class="contenedor-input">
+        <div class="form-group mx-sm-4 pt-3">
             <label>
                 <FONT COLOR="white">Edad</FONT><span class="req">*</span>
             </label>
             <input type="integer" required name="edad">
         </div>
-        <div class="contenedor-input">
+        <div class="form-group mx-sm-4 pt-3">
             <label>
                 <FONT COLOR="white">Direccion</FONT> <span class="req">*</span>
             </label>
             <input type="text" required name="direccion">
         </div>
-        <div class="contenedor-input">
+        <div class="form-group mx-sm-4 pt-3">
             <label>
                 <FONT COLOR="white">Genero</FONT><span class="req">*</span>
             </label>
             <input type="text" required name="genero">
         </div>
-        <div class="contenedor-input">
+        <div class="form-group mx-sm-4 pt-3">
             <label>
                 <FONT COLOR="white">Usuario</FONT><span class="req">*</span>
             </label>
             <input type="text" required name="usuario">
         </div>
-        <div class="contenedor-input">
+        <div class="form-group mx-sm-4 pt-3">
                 <label>
                     <FONT COLOR="white">Email</FONT><span class="req">*</span>
                 </label>
             <input type="email" required name="correo">
         </div>
-        <div class="contenedor-input">
+        <div class="form-group mx-sm-4 pt-3">
             <label>
                 <FONT COLOR="white">Contraseña</FONT><span class="req">*</span>
             </label>
             <input type="password" required name="contrasena">
         </div>
 
-        <div class="contenedor-input">
+        <div class="form-group mx-sm-4 pt-3">
             <label>
                 <FONT COLOR="white">Signo zodiacal</FONT><span class="req">*</span>
             </label>
@@ -81,6 +81,7 @@
     <div class="form-group text-center">
         <button><a>Registrarse</a></button>
     </div>
+    
     </form>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
