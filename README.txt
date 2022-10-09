@@ -55,11 +55,11 @@ insert into usuarios (id, nombre, apellido, edad, direccion, genero, signo, usua
 insert into usuarios (id, nombre, apellido, edad, direccion, genero, signo, usuario, contrasena, correo) values (29, 'Alecia', 'Brice', 23, '507 Randy Way', 'Female', 'Sagitario', 'abrices', 'VfNV36N', 'abrices@indiegogo.com');
 insert into usuarios (id, nombre, apellido, edad, direccion, genero, signo, usuario, contrasena, correo) values (30, 'Palmer', 'Pietruszka', 19, '3 Lukken Lane', 'Male', 'Cancer', 'ppietruszkat', '1744h1WQ4dR', 'ppietruszkat@facebook.com');
 insert into usuarios (id, nombre, apellido, edad, direccion, genero, signo, usuario, contrasena, correo) values (31, 'Orran', 'Brounsell', 22, '382 Mayer Center', 'Male', 'Piscis', 'obrounsellu', 'BrIyfMb', 'obrounsellu@shop-pro.jp');
-insert into usuarios (id, nombre, apellido, edad, direccion, genero, signo, usuario, contrasena, correo) values (45, 'Jillana', 'Lorans', 26, '3 Talisman Pass', 'Female', 'Piscis', 'jlorans18', '32yNBhqGU', 'jlorans18@disqus.com');
-insert into usuarios (id, nombre, apellido, edad, direccion, genero, signo, usuario, contrasena, correo) values (46, 'Haskell', 'Henriques', 20, '6332 Pepper Wood Place', 'Male', 'Cancer', 'hhenriques19', 'L9IESgIhwrb', 'hhenriques19@mtv.com');
-insert into usuarios (id, nombre, apellido, edad, direccion, genero, signo, usuario, contrasena, correo) values (54, 'Chery', 'Kaines', 20, '76 South Drive', 'Female', 'Geminis', 'ckaines1h', '7xc9C4GJ3', 'ckaines1h@msu.edu');
-insert into usuarios (id, nombre, apellido, edad, direccion, genero, signo, usuario, contrasena, correo) values (49, 'Cissy', 'Medina', 30, '15190 Fairfield Point', 'Female', 'Acuario', 'cmedina1c', 'FbrZXpcwG', 'cmedina1c@about.com');
-insert into usuarios (id, nombre, apellido, edad, direccion, genero, signo, usuario, contrasena, correo) values (69, 'Donia', 'Sanderson', 27, '268 Spaight Pass', 'Female', 'Tauro', 'dsanderson1w', '3iHUOdW32', 'dsanderson1w@mlb.com');
+insert into usuarios (id, nombre, apellido, edad, direccion, genero, signo, usuario, contrasena, correo) values (32, 'Jillana', 'Lorans', 26, '3 Talisman Pass', 'Female', 'Piscis', 'jlorans18', '32yNBhqGU', 'jlorans18@disqus.com');
+insert into usuarios (id, nombre, apellido, edad, direccion, genero, signo, usuario, contrasena, correo) values (33, 'Haskell', 'Henriques', 20, '6332 Pepper Wood Place', 'Male', 'Cancer', 'hhenriques19', 'L9IESgIhwrb', 'hhenriques19@mtv.com');
+insert into usuarios (id, nombre, apellido, edad, direccion, genero, signo, usuario, contrasena, correo) values (34, 'Chery', 'Kaines', 20, '76 South Drive', 'Female', 'Geminis', 'ckaines1h', '7xc9C4GJ3', 'ckaines1h@msu.edu');
+insert into usuarios (id, nombre, apellido, edad, direccion, genero, signo, usuario, contrasena, correo) values (35, 'Cissy', 'Medina', 30, '15190 Fairfield Point', 'Female', 'Acuario', 'cmedina1c', 'FbrZXpcwG', 'cmedina1c@about.com');
+insert into usuarios (id, nombre, apellido, edad, direccion, genero, signo, usuario, contrasena, correo) values (36, 'Donia', 'Sanderson', 27, '268 Spaight Pass', 'Female', 'Tauro', 'dsanderson1w', '3iHUOdW32', 'dsanderson1w@mlb.com');
 
 
 
